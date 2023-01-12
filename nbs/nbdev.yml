@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "archetypon"
+  site-url: "https://schlinkertc.github.io/archetypon"
+  description: "Data Modeling and validation with Pydantic and Pandas, specifically designed for Jupyter Notebooks."
+  repo-branch: main
+  repo-url: "https://github.com/schlinkertc/archetypon"
