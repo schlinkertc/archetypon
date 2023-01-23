@@ -125,7 +125,7 @@ class Base():
     
     class Config:
         json_encoders = {
-            PandasDataFrame: lambda df: json.loads(df.to_json())
+            PandasDataFrame: lambda df: json.loads(df.to_json(date_format='iso'))
         }
 
 # %% ../nbs/02_base_model.ipynb 7
