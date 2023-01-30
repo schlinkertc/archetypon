@@ -5,3 +5,4 @@ website:
       - 00_core.ipynb
       - 01_delegates.ipynb
       - 02_base_model.ipynb
+      - 03_record_validation.ipynb
