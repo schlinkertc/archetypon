@@ -1,6 +1,13 @@
-_docs/
+_publish.yml
+_quarto.yml
 _proc/
-
+tests/settings.ini
+idx/
+.install
+conda/
+_site/
+_docs/
+test_settings.ini
 *.bak
 .gitattributes
 .last_checked
