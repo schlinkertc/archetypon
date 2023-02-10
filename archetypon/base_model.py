@@ -81,7 +81,7 @@ class DataFrameEncoder(json.JSONEncoder):
 # %% ../nbs/02_base_model.ipynb 10
 class DataFrameDisplayEncoder(json.JSONEncoder):
     def default(self, z):
-        if isinstance(z, PandasDataFrame):
+        if isinstance(z,PandasDataFrame):
             return pandas_loads(pandas_dumps(z.head()))
         else:
             return super().default(z)
@@ -89,7 +89,7 @@ class DataFrameDisplayEncoder(json.JSONEncoder):
 # %% ../nbs/02_base_model.ipynb 11
 def custom_dumps(v,**kwargs):
     kwargs['cls']=DataFrameEncoder
-    return json.dumps(v,**kwargs)
+    return json.dumps(v, **kwargs)
 
 # %% ../nbs/02_base_model.ipynb 12
 class Base():
@@ -154,9 +154,9 @@ class Base():
         html = {}
     
     class Config:
-        # json_encoders = {
-        #     PandasDataFrame: lambda df: json.loads(df.to_json(date_format='iso'))
-        # }
+        json_encoders = {
+            PandasDataFrame: lambda df: json.loads(df.to_json(date_format='iso'))
+        }
         json_dumps = custom_dumps
 
 

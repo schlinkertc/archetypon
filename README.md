@@ -15,3 +15,5 @@ It’s built using `nbdev`
 ``` sh
 pip install archetypon
 ```
+
+## Example
