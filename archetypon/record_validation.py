@@ -100,7 +100,6 @@ class RecordModelFrameMeta(type):
     def __getitem__(self, constraint):
         return type('RecordFrame', (TypedRecordFrame,), {'row_model': constraint})
 
-
 # %% ../nbs/03_record_validation.ipynb 11
 class RecordFrame(DataFrame, metaclass=RecordModelFrameMeta):
     pass

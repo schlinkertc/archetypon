@@ -3,7 +3,7 @@
 # %% auto 0
 __all__ = ['Database', 'SnowflakeDatabase']
 
-# %% ../nbs/04_database.ipynb 1
+# %% ../nbs/04_database.ipynb 2
 from archetypon.delegates import delegates
 import os
 import pandas as pd
@@ -95,7 +95,6 @@ class DatabaseCredentialsBase(BaseSettings):
     username: str = None
     password: SecretStr = ''
 
-
 # %% ../nbs/04_database.ipynb 6
 class DatabaseCredentials(DatabaseCredentialsBase):
     """ Passed to regular SQLAlchemy URL constructor"""
@@ -120,7 +119,6 @@ class SnowflakeCredentials(DatabaseCredentialsBase):
     role: Optional[str]
     numpy: Optional[bool]
         
-
 
 # %% ../nbs/04_database.ipynb 8
 class Database(DatabaseCredentials,AbstractDatabaseClass):

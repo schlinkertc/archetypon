@@ -3,7 +3,7 @@
 # %% auto 0
 __all__ = ['DataFrame', 'BaseModel', 'GenericModel', 'DataFrameModel']
 
-# %% ../nbs/02_base_model.ipynb 1
+# %% ../nbs/02_base_model.ipynb 2
 from typing import *
 from pydantic import BaseModel as PydanticBaseModel
 from pydantic.generics import GenericModel as PydanticGenericModel
@@ -66,7 +66,6 @@ def pydantic_to_dbt(model: Type[PydanticBaseModel]) -> dict:
         }
         dbt_model["columns"].append({k:v for k,v in column.items() if v})
     return dbt_model
-
 
 # %% ../nbs/02_base_model.ipynb 8
 class Base():
@@ -134,7 +133,6 @@ class Base():
         json_encoders = {
             PandasDataFrame: lambda df: json.loads(df.to_json(date_format='iso'))
         }
-
 
 # %% ../nbs/02_base_model.ipynb 9
 class BaseModel(PydanticBaseModel,Base):
