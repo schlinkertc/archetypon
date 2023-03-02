@@ -27,7 +27,7 @@ def string_to_dict(string, pattern):
     _dict = dict(zip(keys, values))
     return _dict
 
-# %% ../nbs/06_string_templating.ipynb 6
+# %% ../nbs/06_string_templating.ipynb 7
 class StringTemplate(BaseModel):
     string: Optional[str]=None
     template: str
