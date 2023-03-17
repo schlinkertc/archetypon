@@ -4,6 +4,6 @@
 __all__ = []
 
 # %% ../nbs/00_core.ipynb 2
-from archetypon.base_model import BaseModel,DataFrame
+from archetypon.base_model import BaseModel,DataFrame,DataFrameModel
 from archetypon.record_validation import RecordFrame
 import pandas as pd

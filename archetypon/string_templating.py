@@ -19,7 +19,7 @@ def get_formatters_from_string(input_string:str)->List[str]:
         else:
             return {}
 
-# %% ../nbs/06_string_templating.ipynb 4
+# %% ../nbs/06_string_templating.ipynb 5
 def string_to_dict(string, pattern):
     regex = re.sub(r'{(.+?)}', r'(?P<_\1>.+)', pattern)
     values = list(re.search(regex, string).groups())
@@ -29,6 +29,13 @@ def string_to_dict(string, pattern):
 
 # %% ../nbs/06_string_templating.ipynb 7
 class StringTemplate(BaseModel):
+    """String Template Model. 
+    
+    Define the class with a template and fields, and it can parse a string that matches the template into the attributes of the model
+    or accept the attributes and create the string. 
+    
+    Useful for path operations and partitions. 
+    """
     string: Optional[str]=None
     template: str
     
