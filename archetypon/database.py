@@ -145,7 +145,7 @@ class Database(DatabaseCredentials,AbstractDatabaseClass):
         )
         self.engine_url=url
         self.engine=create_engine(url)
-        self.metadata = MetaData(bind=self.engine)
+        self.metadata = MetaData()
 
     class Config:
         arbitrary_types_allowed=True
@@ -183,7 +183,7 @@ class SnowflakeDatabase(SnowflakeCredentials,AbstractDatabaseClass):
         )
 
         self.engine=create_engine(self.engine_url)
-        self.metadata = MetaData(bind=self.engine)
+        self.metadata = MetaData()
 
     class Config:
         arbitrary_types_allowed=True
