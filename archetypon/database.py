@@ -134,7 +134,7 @@ class Database(DatabaseCredentials,AbstractDatabaseClass):
     ):
         # settings __init__
         super().__init__(**kwargs)
-        url = URL(
+        url = URL.create(
             drivername=self.drivername,
             username=self.username,
             password=self.password.get_secret_value(),
