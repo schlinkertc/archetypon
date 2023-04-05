@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://schlinkertc.github.io/archetypon/base_model.html</loc>
+    <lastmod>2023-04-05T17:25:34.509Z</lastmod>
+  </url>
+  <url>
+    <loc>https://schlinkertc.github.io/archetypon/index.html</loc>
+    <lastmod>2023-04-05T17:25:35.709Z</lastmod>
+  </url>
+  <url>
+    <loc>https://schlinkertc.github.io/archetypon/string_templating.html</loc>
+    <lastmod>2023-04-05T17:25:36.181Z</lastmod>
+  </url>
+  <url>
+    <loc>https://schlinkertc.github.io/archetypon/core.html</loc>
+    <lastmod>2023-04-05T17:25:36.589Z</lastmod>
+  </url>
+  <url>
+    <loc>https://schlinkertc.github.io/archetypon/delegates.html</loc>
+    <lastmod>2023-04-05T17:25:36.969Z</lastmod>
+  </url>
+  <url>
+    <loc>https://schlinkertc.github.io/archetypon/formatting.html</loc>
+    <lastmod>2023-04-05T17:25:37.485Z</lastmod>
+  </url>
+  <url>
+    <loc>https://schlinkertc.github.io/archetypon/record_validation.html</loc>
+    <lastmod>2023-04-05T17:25:37.941Z</lastmod>
+  </url>
+  <url>
+    <loc>https://schlinkertc.github.io/archetypon/database.html</loc>
+    <lastmod>2023-04-05T17:25:38.349Z</lastmod>
+  </url>
+</urlset>
